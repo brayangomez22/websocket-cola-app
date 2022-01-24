@@ -15,22 +15,26 @@
 	</head>
 
 	<body class="container">
-		<h1 class="mt-5">Queue Program</h1>
-
+		<h1 class="mt-5">Desk</h1>
+		<hr />
 		<div class="row">
-			<div class="col-6">
-				<a class="btn btn-primary" href="public.html">Public display</a>
-				<a class="btn btn-secondary" href="new-ticket.html">Create Ticket</a>
+			<div class="col-8">
+				<h4>Serving <small class="text-primary">....</small></h4>
+
+				<button class="btn btn-primary mt-5">Attend next ticket</button>
 			</div>
 
-			<div class="col-6">
-				<form action="desk.html">
-					<input name="desk" type="text" class="form-control" placeholder="desk" autofocus required />
+			<div class="col-4 text-center">
+				<h4>In queue</h4>
 
-					<br />
-					<button type="submit" class="btn btn-primary">login to the queue system</button>
-				</form>
+				<div class="alert alert-info mt-2">
+					<span>There are no more tickets</span>
+				</div>
+
+				<h1 id="lblPending">10</h1>
 			</div>
 		</div>
+
+		<script src="./js/desk.js"></script>
 	</body>
 </html>
